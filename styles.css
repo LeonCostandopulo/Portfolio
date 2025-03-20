@@ -9,6 +9,9 @@ html{
     box-sizing: border-box;
 }
 body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     background-color: #222;
     font-family:  sans-serif;
     color: var(--text-color);
@@ -96,11 +99,37 @@ h3,h4,h5,h6{
     color: var(--text-color-title);
     background-color: transparent;
     cursor: pointer;
+    position: relative;
 }
+/** HOVER DE LOS BUTTONS **/
+.email-button:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
+.tooltiptext {
+    width: 150px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Posición */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Muestra el tooltip arriba */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s;
+    
+    visibility: hidden;
+    opacity: 0;
+}
+/** Redes **/
 .redes{
     color: var(--text-color-title);
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+    margin-left: .5rem;
 }
 .redes a{
     color: var(--text-color-title);
@@ -113,8 +142,15 @@ h3,h4,h5,h6{
 .block1{
     border-bottom: 1px solid var(--text-color);
 }
+@media screen and (max-width: 340px) {
+    .fa-envelope{
+        margin-left: 0;
+    }
+}
 @media screen and (max-width: 500px) {
-    
+    .redes{
+        margin-left: 0;
+    }
     .block1{
         flex-direction: column;
         align-items: center;
@@ -192,7 +228,13 @@ h3,h4,h5,h6{
 }
 .experiencia{
     font-size: 1.5rem;
-    margin: 1.3rem 0 0rem .9rem;
+    margin: 1.3rem 0 .8rem .9rem;
+}
+.empresa-info{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: .76rem;
 }
 .experiencia-list{
     margin: 0 0 1rem 1rem;
@@ -200,10 +242,87 @@ h3,h4,h5,h6{
     list-style: none;
     padding: 0;
     margin-left: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 .experiencia-item{
-    margin: .7rem 0;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+}
+@media screen and (min-width: 650px) {
+    .experiencia-item{
+        display: flex;
+    }
+    .empresa-logo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 12rem;
+    }
+    .empresa-info{
+        border-left: 1px solid var(--text-color);
+        padding-left: 2rem;
+    }
+}
+/** CR Grow ***/
+.empresa-logo{
+    width: 95%;
+}
+.empresa-titulo{
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--text-color-title);
+}
+.empresa-rol{
+    margin: 0;
+}
+.empresa-descipcion{
+    margin: 0;
+}
+.stack{
+    margin-top: .5rem;
 }
 
-/*** Footer ***/
+.fa-react{
+    margin-left: 10px;
+}
+.fa-react::before{
+    font-size: 24px;
+}
 
+/*** Proyectos ***/
+.proyectos{
+    margin-bottom: 1.5rem;
+}
+/*** Formación ***/
+.ciata-logo-container{
+    width: 15rem;
+    justify-self: center;
+}
+.unlamlogo{
+    margin-right: 2px;
+}
+/*** Footer ***/
+.footer{
+    width: 100%;
+    margin: 0;
+    padding:  3rem 0;
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+.redes-footer{
+    display: flex;
+    margin-top: 1rem;
+    gap: 2.5rem;
+    justify-content: center;
+}
+.email-container-footer{
+    margin: 0;
+}
