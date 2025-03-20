@@ -1,0 +1,209 @@
+:root{
+    --text-color: #b6b6b6;
+    --text-color-title: #ddd;
+    --web-color: var(--text-color-title);
+}
+html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #222;
+    font-family:  sans-serif;
+    color: var(--text-color);
+}
+h3,h4,h5,h6{
+    color: var(--text-color-title);
+    font-size: 1.5rem;
+}
+.flex-container{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: clamp(300px, 100%, 800px);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.title{
+    color: var(--text-color-title);
+    font-size: 2rem;
+    margin: 3rem 0 .5rem 0;
+}
+.img-container{
+    align-self: start;
+    min-width: 150px;
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #444;
+    margin-top: 1.7rem;
+    flex-grow: 1;
+}
+.img-perfil{
+    border-radius: 50%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    box-sizing: border-box;
+    aspect-ratio: 1/1;
+}
+.block1{
+    display: flex;
+    padding: 1.4rem;
+    gap: .6rem;
+}
+.perfil-info{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+    flex-wrap: wrap;
+    flex-grow: 2;
+}
+.subtitle{
+    color: var(--text-color-title);
+    opacity: .8;
+    font-size: 1.2rem;
+    margin-bottom: .25rem;
+}
+.perfil-info .fab, .perfil-info .fas{
+    color: var(--text-color);
+}
+.ubicacion-containter{
+    font-size: .9rem;
+    font-weight: 100;
+    margin: .4rem 0 .4rem 0;
+}
+.email-container{
+    margin: .3rem 0px 1.1rem 0px;
+}
+.email-input{
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    font-size: 1rem;
+    padding: 3px;
+    color: var(--text-color-title);
+    background-color: transparent;
+    width: 13.36rem;
+    margin: 0 0 .5rem 0;
+}
+.email-button{
+    margin: 0 .3rem;
+    font-size: 1rem;
+    border: 1px solid var(--text-color);
+    padding: 6px;
+    color: var(--text-color-title);
+    background-color: transparent;
+    cursor: pointer;
+}
+.redes{
+    color: var(--text-color-title);
+    display: flex;
+    gap: 1rem;
+}
+.redes a{
+    color: var(--text-color-title);
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+.redes a:first-child{
+    margin-left: 0;
+}
+.block1{
+    border-bottom: 1px solid var(--text-color);
+}
+@media screen and (max-width: 500px) {
+    
+    .block1{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .perfil-info{
+        margin: 0;
+        margin-bottom: .6rem;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+    .img-container{
+        margin: auto;
+    }
+    .title{
+        margin: 0 0 .6rem 0;
+        text-align: center;
+    }
+    .email-container{
+        text-align: center;
+    }
+    .redes{
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: .5rem;
+    }
+}
+/*** Sobre mi ***/
+.block2{
+    margin: 0;
+    height: auto;
+}
+.sobremi{
+    margin: 1.3rem 0 .3rem .9rem;
+}
+.descripcion{
+    margin: 0 .7rem 0 1rem;
+}
+/*** Tecnologías ***/
+.block3{
+    margin: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.tecnologias{
+    font-size: 1.5rem;
+    margin: 1.3rem 0 0rem .9rem;
+}
+.tecnologias-list{
+    margin: 0 0 1rem 1rem;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin-left: 1rem;
+}
+.tecnologia-item{
+    margin: .7rem 0;
+}
+.fa-html5, .fa-css3-alt, .fa-js-square{
+    color: var(--web-color);
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+
+/*** Experiencia ***/
+.block4{
+    margin: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.experiencia{
+    font-size: 1.5rem;
+    margin: 1.3rem 0 0rem .9rem;
+}
+.experiencia-list{
+    margin: 0 0 1rem 1rem;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin-left: 1rem;
+}
+.experiencia-item{
+    margin: .7rem 0;
+}
+
+/*** Footer ***/
+

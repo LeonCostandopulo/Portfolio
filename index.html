@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Programador, Wordpress, HTML5, CSS4, SEO, SEM, UX, UI, Responsive, e-commerce, ecommerce, Diseño Web, Costandopulo, León, Leon">
+    <meta name="author" content="Costandopulo León">
+    <meta property="og:title" content="Portfolio Costandopulo León">
+    <meta property="og:description" content="Soy Front Developer Junior y estoy seguro que puedo aportarle valor a tu empresa">
+    <meta property="og:image" content=""> <!--! IMAGEN PREVISUALIZACIÓN -->
+    <meta property="og:url" content="">   <!--! URL PREVISUALIZACIÓN -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>León Portfolio</title>
+    <link rel='stylesheet' href='styles.css'>
+    <link rel='stylesheet' href='Fonts.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+    <container class="flex-container">
+        <section class="block block1">
+            <container class="img-container">
+                <img class="img-perfil" src="assets/fotoperfil.jpg" alt="imágen del perfíl">
+            </container>
+            <container class="perfil-info">
+                    <h1 class="title" id="title">Costandopulo León</h1>
+                <subtitle class="subtitle" id="subtitle">Junior Front End Developer</subtitle>
+                <address class="ubicacion-containter" id="ubication-containter">
+                    <i class="fas fa-map-marker-alt" id="ubication-icon"></i> La Matanza, Buenos Aires.
+                </address>
+                <div class="email-container">
+                    <input type="text" id="email" class="email-input" value="leoncostandopulo@gmail.com" readonly aria-label="Correo electrónico">
+                    <button class="email-button fas fa-copy" onclick="copiarEmail()" aria-label="Copiar correo"></button>
+                    <a href="mailto:leoncostandopulo@gmail.com" class="email-button fas fa-envelope" aria-label="Enviar correo"></a>
+                </div>
+                <container class="redes">
+                    <a href=" CV LINK" target="_blank" class="cv-button" aria-label="Abrir currículum"> <!--! CV LINK -->
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                    <a href=" GIT HUB LINK" target="_blank" class="github-button" aria-label="Ir a mi GitHub"> <!--! CV LINK -->
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href=" LINKEDIN LINK" target="_blank" class="linkedin-button" aria-label="Abrir currículum"> <!--! CV LINK -->
+                        <i class="fas fab fa-linkedin"></i>
+                    </a>
+                </container>
+            </container>
+        </section>
+        <section class="block block2">
+            <h2 class="sobremi">Sobre Mi</h2>
+            <p class="descripcion">Soy un programador Junior con 1 año de experiencia aprendiendo sobre Front End. Me especializo en el desarrollo de interfaces de usuario y la creación de sitios web atractivos y funcionales. Me encanta aprender y estoy seguro que aportaré valor en su empresa.</p>
+        </section>
+        <section class="block block3">
+            <h3 class="tecnologias">Tecnologías centrales</h3>
+            <ul class="tecnologias-list">
+                <li class="tecnologia-item">
+                    <i class="fab fa-html5"></i> HTML</li>
+                <li class="tecnologia-item">
+                    <i class="fab fa-css3-alt"></i> CSS</li>
+                <li class="tecnologia-item">
+                    <i class="fab fa-js-square"></i> JavaScript</li>
+            </ul>
+        </section>
+        <section class="block block4">
+            <h4 class="experiencia">Experiencia</h4>
+            <ul class="experiencia-list">
+                <li class="experiencia-item">
+                    <img src="" alt="imagen de la empresa"> <!--! IMAGEN DE LA EMPRESA -->
+                    <span class="empresa-titulo">CR Grow</span>
+                    <span class="empresa-rol">Diseño, desarrollo y despliegue de la web </span>
+                    <p class="empresa-descipcion">Es un web estática, con una sección para customizar el producto y realizar la compra vía whatsapp (petición del cliente)</p>
+                    <span class="stack">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js-square"></i>
+                    </span> 
+                </li>
+            </ul>
+        </section>
+        <section class="block block5">
+            <h5 class="proyectos">Proyectos</h5>
+            <ul class="proyectos-list">
+                <li class="proyectos-item">
+                    <img src="" alt="imagen de la empresa"> <!--! IMAGEN DE LA EMPRESA -->
+                    <span class="proyecto-titulo">Titulo del proyecto</span>
+                    <span class="proyecto-rol">ROL</span>
+                    <p class="proyecto-descipcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad atque itaque omnis</p>
+                    <span class="stack">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js-square"></i>
+                    </span> 
+                </li>
+            </ul>
+        </section>
+        <section class="block block6">
+            <h6 class="formacion">Formación</h6>
+            <ul class="formacion-list">
+                <li class="formacion-item">
+                    <img src="" alt="imagen de la escuela"> <!--! IMAGEN DE LA FORMACIÓN -->
+                    <span class="formacion-titulo">Titulo de la formación</span>
+                    <p class="formacion-descripcion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad atque itaque omnis</p>
+                    <span class="formacion-aprendizaje">Aprendi cosas</span>
+                </li>
+            </ul>
+        </section>
+        <section class="block footer">
+            <div class="email-container">
+                <input type="text" id="email" class="email-input" value="leoncostandopulo@gmail.com" readonly aria-label="Correo electrónico">
+                <button class="email-button fas fa-copy" onclick="copiarEmail()" aria-label="Copiar correo"></button>
+                <a href="mailto:leoncostandopulo@gmail.com" class="email-button fas fa-envelope" aria-label="Enviar correo"></a>
+                <container class="redes" >
+                    <a href=" CV LINK" target="_blank" class="cv-button" aria-label="Abrir currículum"> <!--! CV LINK -->
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                    <a href=" GIT HUB LINK" target="_blank" class="github-button" aria-label="Ir a mi GitHub"> <!--! CV LINK -->
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href=" LINKEDIN LINK" target="_blank" class="linkedin-button" aria-label="Abrir currículum"> <!--! CV LINK -->
+                        <i class="fas fab fa-linkedin"></i>
+                    </a>
+                </container>
+        </section>
+
+
+    </container>
+
+    <!-- ! SOFT SKILLS -->
+    <script src='script.js'></script>
+</body>
+</html>
