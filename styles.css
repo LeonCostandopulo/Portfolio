@@ -216,6 +216,7 @@ h3,h4,h5,h6{
     height: auto;
     display: flex;
     flex-direction: column;
+    padding: 1rem;
 }
 .tecnologias{
     font-size: 1.5rem;
@@ -265,13 +266,14 @@ h3,h4,h5,h6{
 }
 .experiencia{
     font-size: 1.5rem;
-    margin: 1.3rem 0 .8rem .9rem;
+    margin: 1.3rem 0 .8rem 1.7rem;
 }
 .empresa-info{
     display: flex;
     flex-direction: column;
     gap: .5rem;
     padding: .76rem;
+    padding-left: 0;
 }
 .experiencia-list{
     margin: 0 0 1rem 1rem;
@@ -288,10 +290,19 @@ h3,h4,h5,h6{
     gap: 2rem;
     width: 100%;
     align-items: center;
+    padding: .8rem;
+    border-bottom: 1px solid #65d85a77;
+}
+.lastchild{
+    border-bottom: none;
+}
+.block{
+    padding-right: 1rem;
 }
 @media screen and (min-width: 650px) {
     .experiencia-item{
         display: flex;
+        border-bottom: none;
     }
     .empresa-logo-container{
         display: flex;
@@ -313,6 +324,7 @@ h3,h4,h5,h6{
     margin: 0;
     font-size: 1.2rem;
     color: var(--text-color-title);
+    font-weight: 700;
 }
 .empresa-rol{
     margin: 0;
