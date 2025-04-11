@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang='es'>
-<head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Programador, Wordpress, HTML5, CSS4, SEO, SEM, UX, UI, Responsive, e-commerce, ecommerce, Diseño Web, Costandopulo, León, Leon">
-    <meta name="author" content="Costandopulo León">
-    <meta property="og:title" content="Portfolio Costandopulo León">
-    <meta property="og:description" content="Soy Front Developer Junior y estoy seguro que puedo aportarle valor a tu empresa">
-    <meta property="og:image" content=""> <!--! IMAGEN PREVISUALIZACIÓN -->
-    <meta property="og:url" content="">   <!--! URL PREVISUALIZACIÓN -->
-    <meta name="twitter:card" content="summary_large_image">
-
-    <title>León Portfolio</title>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Portfolio de León Costandopulo - Desarrollador Front-end especializado en crear experiencias web atractivas y funcionales con React, JavaScript, HTML5 y CSS3">
+        <meta name="keywords" content="León Costandopulo, Front-end Developer, Desarrollo Web, React, JavaScript, HTML5, CSS3, Tailwind CSS, Portfolio, Buenos Aires, Argentina">
+        <meta name="author" content="León Costandopulo">
+        <meta name="robots" content="index, follow">
+    
+        <!-- FaceBook WhatsApp etc-->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://portfoliolaion.netlify.app">
+        <meta property="og:title" content="León Costandopulo | Front-end Developer">
+        <meta property="og:description" content="Desarrollador Front-end especializado en crear experiencias web atractivas y funcionales">
+        <meta property="og:image" content="https://portfoliolaion.netlify.app/public/preview-image.jpg">
+        <meta property="og:image:type" content="image/jpeg">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+    
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:url" content="https://portfoliolaion.netlify.app">
+        <meta name="twitter:title" content="León Costandopulo | Front-end Developer">
+        <meta name="twitter:description" content="Desarrollador Front-end especializado en crear experiencias web atractivas y funcionales">
+        <meta name="twitter:image" content="https://portfoliolaion.netlify.app/public/preview-image.jpg">
+    
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="public/LC-logo.png" sizes="32x32">
+        
+        <title>León Costandopulo | Front-end Developer</title>
     <link rel='stylesheet' href='styles.css'>
     <link rel='stylesheet' href='Fonts.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-</head>
+</head> 
 <body>
     <container class="flex-container">
         <section class="block block1">
@@ -24,7 +43,7 @@
                 <img class="img-perfil" src="assets/fotoperfil.jpg" alt="imágen del perfíl">
             </container>
             <container class="perfil-info">
-                    <h1 class="title" id="title">Costandopulo León</h1>
+                    <h1 class="title special-color" id="title">Costandopulo León</h1>
                 <subtitle class="subtitle" id="subtitle">Junior Front End Developer</subtitle>
                 <address class="ubicacion-containter" id="ubication-containter">
                     <i class="fas fa-map-marker-alt" id="ubication-icon"></i> La Matanza, Buenos Aires.
@@ -35,25 +54,25 @@
                     <span class="tooltiptext">Enviar un mail a León</span>
                     <a href="mailto:leoncostandopulo@gmail.com" class="email-button fas fa-envelope" aria-label="Enviar correo"></a>
                 </div>
-                <container class="redes">
+                <container class="redes ">
                     <a href="/assets/COSTANDOPULO_LEON.pdf" download="CV_COSTANDOPULO_LEON.pdf" target="_blank" class="cv-button" aria-label="Abrir currículum"> <!--! CV LINK -->
-                        <i class="fas fa-file-alt"></i>
+                        <i class="fas fa-file-alt hover-scale"></i>
                         <span class="tooltiptext">Descargar el CV de León</span>
                     </a>
                     <a  href="https://github.com/LeonCostandopulo" target="_blank" class="github-button" aria-label="Ir a mi GitHub"> <!--! CV LINK -->
-                        <i class="fab fa-github"></i>
+                        <i class="fab fa-github hover-scale"></i>
                         <span class="tooltiptext">Ir al GitHub de León</span>
                     </a>
                     <a href="https://www.linkedin.com/in/león-costandopulo-57b3a2236/" target="_blank" class="linkedin-button" aria-label="Abrir currículum"> <!--! CV LINK -->
-                        <i class="fas fab fa-linkedin"></i>
+                        <i class="fas fab fa-linkedin hover-scale"></i>
                         <span class="tooltiptext">Ir al LinkedIn de León</span>
                     </a>
                 </container>
             </container>
         </section>
         <section class="block block2">
-            <h2 class="sobremi">Sobre Mi</h2>
-            <p class="descripcion">Soy un programador Junior con 1 año de experiencia aprendiendo sobre Front End. Me especializo en el desarrollo de interfaces de usuario y la creación de sitios web atractivos y funcionales. Me encanta aprender y estoy seguro que aportaré valor en su empresa.</p>
+            <h2 class="sobremi ">Sobre Mi</h2>
+            <p class="descripcion"> Soy un <span class="special-color"> programador Junior con 1 año de experiencia </span> aprendiendo sobre Front End. Me especializo en el desarrollo de interfaces de usuario y la creación de sitios web atractivos y funcionales. <span class="special-color"> Me encanta aprender </span>y estoy seguro que aportaré valor en su empresa.</p>
         </section>
         <section class="block block3">
             <h3 class="tecnologias">Tecnologías centrales</h3>
@@ -64,24 +83,47 @@
                     <i class="fab fa-css3-alt"></i> CSS</li>
                 <li class="tecnologia-item">
                     <i class="fab fa-js-square"></i> JavaScript</li>
+                <li class="tecnologia-item bold white">
+                    <i class="fab fa-js-square fa-react tailwind-icon "></i> React</li>
+                <li class="tecnologia-item bold white">
+                    <svg class="fa-js-square tailwind-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+                    </svg> Tailwind CSS </li>
             </ul>
         </section>
         <section class="block block4">
             <h4 class="experiencia">Experiencia</h4>
             <ul class="experiencia-list">
                 <li class="experiencia-item">
-                    <a class="empresa-logo-container" href="https://crgrow.netlify.app" target="_blank">
+                    <a class="empresa-logo-container" href="https://siennajma.netlify.app">
+                        <img class="empresa-logo" src="/assets/sienna-logo-square.jpg" alt="imagen de la empresa"> <!--! IMAGEN DE LA EMPRESA -->
+                    </a>
+                    <div class="empresa-info">
+                        <p class="empresa-titulo">Sienna</p>
+                        <p class="empresa-descipcion">Es una web de venta de ropa sin pasarela de pago, el mismo se finaliza vía WhatsApp mediante su API para un mensaje personalizado. </p>
+                        
+                        <p class="empresa-rol">Diseño, desarrollo y despliegue de la web. <span class="special-color">Freelance</span> </p>
+                        <span class="stack">
+                            <i class="fab fa-react "></i>
+                            <svg class="fa-js-square tailwind-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+                            </svg></li>
+                        </span> 
+                    </div>
+                </li>
+                <li class="experiencia-item">
+                    <a class="empresa-logo-container" href="https://crgrow.netlify.app">
                         <img class="empresa-logo" src="/assets/logo-icon.webp" alt="imagen de la empresa"> <!--! IMAGEN DE LA EMPRESA -->
                     </a>
                     <div class="empresa-info">
                         <p class="empresa-titulo">CR Grow</p>
                         <p class="empresa-descipcion">Es un web estática, con una sección para customizar el producto y realizar la compra vía whatsapp (petición del cliente)</p>
-                        <p class="empresa-rol">Diseño, desarrollo y despliegue de la web </p>
+                        <p class="empresa-rol">Diseño, desarrollo y despliegue de la web. <span class="special-color">Freelance</span> </p>
                         <span class="stack">
                             <i class="fab fa-html5"></i>
                             <i class="fab fa-css3-alt"></i>
                             <i class="fab fa-js-square"></i>
-                            <i class="fab fa-react"></i>
+                            <i class="fab fa-react "></i>
                         </span> 
                     </div>
                 </li>
@@ -91,12 +133,12 @@
             <h4 class="experiencia proyectos">Proyectos</h4>
             <ul class="experiencia-list">
                 <li class="experiencia-item">
-                    <a class="empresa-logo-container" href="" target="_blank">
+                    <a class="empresa-logo-container" href="https://crgrow.netlify.app">
                         <img class="empresa-logo" src="/assets/portadasally.webp" alt="imagen de la empresa"> <!--! IMAGEN DE LA EMPRESA -->
                     </a>
                     <div class="empresa-info">
                         <p class="empresa-titulo">Sally Game</p>
-                        <p class="empresa-descipcion">Es un videojuego web hecho para por pura curiosidad y ganas de aplicar utilidades "raras" de JavaScript que iba aprendiendo, es un juego corto, sencillo, más bien una historia, con estética retro. Aprendí mucho de JavaScript y CSS principalmente, no es responsive ya que en ese momento no contaba con los conocimientos suficientes (a diferencia de este portfolio que es completamente responsive, te invito a probarlo)
+                        <p class="empresa-descipcion">Es un videojuego web hecho para por pura curiosidad y ganas de aplicar utilidades "raras" de JavaScript que iba aprendiendo, es un juego corto, sencillo, más bien una historia, con estética retro. <span class="special-color"> Aprendí mucho de JavaScript y CSS principalmente </span>, no es responsive ya que en ese momento no contaba con los conocimientos suficientes (a diferencia de <span class="special-color">este portfolio que es completamente responsive, te invito a probarlo)</span>
                         Estoy trabajando en la demo.
                         </p>
                         <p class="empresa-rol">Diseño, desarrollo y despliegue.</p>
@@ -109,12 +151,12 @@
                 </li>
 
                 <li class="experiencia-item">
-                    <a class="empresa-logo-container" href="https://ecommerceleon.netlify.app" target="_blank">
+                    <a class="empresa-logo-container" href="https://ecommerceleon.netlify.app">
                         <img class="empresa-logo" src="/assets/screenshot-ecommerce.webp" alt="imagen de la empresa"> <!--! IMAGEN DE LA EMPRESA -->
                     </a>
                     <div class="empresa-info">
                         <p class="empresa-titulo">E-Commerce</p>
-                        <p class="empresa-descipcion">Es un e-commerce hecho con HTML, CSS y JavaScript. Fue realizado con la ayuda de un profesor de Guayerd (un bootcamp) conocido mio y me enseñó algunos conceptos que no entendía mediante la creación de este "template" o proyecto de e-commerce. Tuve que debuggear MUCHISIMO y sinceramente fue una gran experiencia.
+                        <p class="empresa-descipcion">Es un e-commerce hecho con HTML, CSS y JavaScript. Fue realizado con la ayuda de un profesor de Guayerd (un bootcamp) conocido mio y me enseñó algunos conceptos que no entendía mediante la creación de este "template" o proyecto de e-commerce.<span class="special-color"> Tuve que debuggear MUCHISIMO </span> y sinceramente fue una gran experiencia.
                         </p>
                         <p class="empresa-rol">Diseño, desarrollo y despliegue.</p>
                         <span class="stack">
@@ -135,7 +177,7 @@
                     </div>
                     <div class="empresa-info">
                         <p class="empresa-titulo">INAC - CIATA</p>
-                        <p class="empresa-descipcion">Si bien no viene al caso con el puesto al que apunto, me parece correcto ponerlo ya que denota una capacitación general muy suficiente. Una institución reconocida en el país y a la que personalmente tengo mucho cariño.</p>
+                        <p class="empresa-descipcion">Si bien no viene al caso con el puesto al que apunto, me parece correcto ponerlo ya que denota una capacitación de nivel secundario más que suficiente. Una institución reconocida en el país y a la que personalmente tengo mucho cariño.</p>
                         <p class="empresa-rol">Título: Técnico Aviónico</p>
                     </div>
                 </li>
@@ -148,7 +190,7 @@
                     <div class="empresa-info">
                         <p class="empresa-titulo">UNLaM</p>
                         <p class="empresa-descipcion">Actualmente me encuentro cursando el primer año de la carrera de Ingeniería Informática en la Universidad Nacional de La Matanza. El ingreso fue cursado en un mes (Febrero 2025) y el egreso previsto sería en 2029 (4 años).</p>
-                        <p class="empresa-rol">Título: Ingeniero Informático</p>
+                        <p class="empresa-rol">Título: <span class="special-color">Ingeniero Informático</span></p>
                     </div>
                 </li>
             </ul>
@@ -158,17 +200,17 @@
     <section class="block footer">
         <div class="email-container email-container-footer">
             <input type="text" id="email" class="email-input" value="leoncostandopulo@gmail.com" readonly aria-label="Correo electrónico">
-            <button class="email-button fas fa-copy" onclick="copiarEmail()" aria-label="Copiar correo"></button>
-            <a href="mailto:leoncostandopulo@gmail.com" class="email-button fas fa-envelope" aria-label="Enviar correo"></a>
-            <container class="redes redes-footer" >
-                <a href="/assets/COSTANDOPULO_LEON.pdf" download="CV_COSTANDOPULO_LEON.pdf" target="_blank" class="cv-button" aria-label="Abrir currículum"> <!--! CV LINK -->
-                    <i class="fas fa-file-alt"></i>
+            <button class="email-button fas fa-copy hover-scale" onclick="copiarEmail()" aria-label="Copiar correo"></button>
+            <a href="mailto:leoncostandopulo@gmail.com" class="email-button special-color hover-scale fas fa-envelope" aria-label="Enviar correo"></a>
+            <container class="redes redes-footer " >
+                <a href="/assets/COSTANDOPULO_LEON.pdf" download="CV_COSTANDOPULO_LEON.pdf" target="_blank" class="cv-button " aria-label="Abrir currículum"> <!--! CV LINK -->
+                    <i class="fas fa-file-alt special-color hover-scale"></i>
                 </a>
                 <a href="https://github.com/LeonCostandopulo" target="_blank" class="github-button" aria-label="Ir a mi GitHub"> <!--! CV LINK -->
-                    <i class="fab fa-github"></i>
+                    <i class="fab fa-github hover-scale"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/león-costandopulo-57b3a2236/" target="_blank" class="linkedin-button" aria-label="Abrir currículum"> <!--! CV LINK -->
-                    <i class="fas fab fa-linkedin"></i>
+                    <i class="fas fab fa-linkedin  hover-scale"></i>
                 </a>
             </container>
     </section>

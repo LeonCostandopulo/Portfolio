@@ -2,13 +2,28 @@
     --text-color: #b6b6b6;
     --text-color-title: #ddd;
     --web-color: var(--text-color-title);
+    --text-special-color: #65d85a;
+}
+.cuadrado{
+    max-width:  24px;
+    max-height: 26px;
+    height: 100px;
+    background-color: var(--text-special-color);
+    color:#151515;
+    padding: 34px 24px 10px 21px;
+    border-radius: 8px;
+    margin-top: 2rem;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-left: 3rem;
 }
 html{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+body{ 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -184,6 +199,7 @@ h3,h4,h5,h6{
 /*** Sobre mi ***/
 .block2{
     margin: 0;
+    margin-bottom: 2rem;
     height: auto;
 }
 .sobremi{
@@ -191,6 +207,8 @@ h3,h4,h5,h6{
 }
 .descripcion{
     margin: 0 .7rem 0 1rem;
+    max-width: 80ch;
+    font-size: 1.1rem;
 }
 /*** Tecnologías ***/
 .block3{
@@ -204,21 +222,40 @@ h3,h4,h5,h6{
     margin: 1.3rem 0 0rem .9rem;
 }
 .tecnologias-list{
-    margin: 0 0 1rem 1rem;
+    margin: 1rem 0 1rem 1rem;
     text-decoration: none;
     list-style: none;
     padding: 0;
     margin-left: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    gap: 1.5rem;
 }
 .tecnologia-item{
-    margin: .7rem 0;
+    display: flex;
+    align-items: center;
+    max-width: 170px;
+    justify-content: space-between;
+    background-color: #333;
+    padding: .8rem;
+    border-radius: 5px;
 }
-.fa-html5, .fa-css3-alt, .fa-js-square{
-    color: var(--web-color);
-    margin: 0 1rem;
+.fa-html5, .fa-css3-alt, .fa-js-square, .fa-react, .tailwind-icon{
     font-size: 1.5rem;
 }
-
+.fa-react{
+    color: #36b7f0;
+    font-size: 1.5rem;
+}
+.fa-js-square{
+    color: #f0db4f;
+}
+.fa-html5{
+    color: #ff5d34;
+}
+.fa-css3-alt{
+    color: #496bf3;
+}
 /*** Experiencia ***/
 .block4{
     margin: 0;
@@ -270,6 +307,7 @@ h3,h4,h5,h6{
 /** CR Grow ***/
 .empresa-logo{
     width: 95%;
+    max-width: 182px;
 }
 .empresa-titulo{
     margin: 0;
@@ -284,11 +322,13 @@ h3,h4,h5,h6{
 }
 .stack{
     margin-top: .5rem;
+    margin-left: .5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
-.fa-react{
-    margin-left: 10px;
-}
+
 .fa-react::before{
     font-size: 24px;
 }
@@ -309,7 +349,8 @@ h3,h4,h5,h6{
 .footer{
     width: 100%;
     margin: 0;
-    padding:  3rem 0;
+    margin-top: 2rem;
+    padding:  4rem 0;
     background-color: #151515;
     display: flex;
     justify-content: center;
@@ -325,4 +366,32 @@ h3,h4,h5,h6{
 }
 .email-container-footer{
     margin: 0;
+}
+
+.tailwind-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #36b7f0;
+}
+/** Color **/
+.special-color{
+    color: var(--text-special-color);
+    font-weight: 600;
+}
+.bold{
+    font-weight: 600;
+}
+.hover-scale{
+    transition: scale .2s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        scale: 1.25;
+    }
+}
+p{
+    max-width: 80ch;
+}
+.block5{
+    border-bottom: 2px solid var(--text-color);
+    padding-bottom: 3rem;
 }
