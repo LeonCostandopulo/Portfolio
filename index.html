@@ -32,80 +32,100 @@
         
         <title>León Costandopulo | Front-end Developer</title>
     <link rel='stylesheet' href='styles.css'>
-    <link rel='stylesheet' href='Fonts.css'>
+    <!-- <link rel='stylesheet' href='Fonts.css'> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head> 
 <body>
+    <div class="view-mask"></div>
     <container class="flex-container">
         <section class="block block1">
             <container class="img-container">
                 <img class="img-perfil" src="assets/fotoperfil.jpg" alt="imágen del perfíl">
             </container>
             <container class="perfil-info">
-                    <h1 class="title special-color" id="title">Costandopulo León</h1>
-                <subtitle class="subtitle" id="subtitle">Junior Front End Developer</subtitle>
-                <address class="ubicacion-containter" id="ubication-containter">
-                    <i class="fas fa-map-marker-alt" id="ubication-icon"></i> La Matanza, Buenos Aires.
+                    <h1 class="title special-color charAnimation" id="title">Costandopulo León</h1>
+                <subtitle class="subtitle charAnimation" id="subtitle">Front End Developer</subtitle>
+                <address class="ubicacion-containter charAnimation" id="ubication-containter">
+                    <i class="fas fa-map-marker-alt dropdown" id="ubication-icon"></i> La Matanza, Buenos Aires.
                 </address>
-                <div class="email-container">
-                    <input type="text" id="email" class="email-input" value="leoncostandopulo@gmail.com" readonly aria-label="Correo electrónico">
-                    <button class="email-button fas fa-copy" onclick="copiarEmail()" aria-label="Copiar correo"></button>
+                <div class="email-container ">
+                    <input type="text" id="email" class="email-input dropdown" value="leoncostandopulo@gmail.com" readonly aria-label="Correo electrónico">
+                    <button class="email-button fas fa-copy dropdown" onclick="copiarEmail()" aria-label="Copiar correo"></button>
                     <span class="tooltiptext">Enviar un mail a León</span>
-                    <a href="mailto:leoncostandopulo@gmail.com" class="email-button fas fa-envelope" aria-label="Enviar correo"></a>
+                    <a href="mailto:leoncostandopulo@gmail.com" class="email-button fas fa-envelope dropdown" aria-label="Enviar correo"></a>
                 </div>
                 <container class="redes ">
-                    <a href="/assets/COSTANDOPULO_LEON.pdf" download="CV_COSTANDOPULO_LEON.pdf" target="_blank" class="cv-button" aria-label="Abrir currículum"> <!--! CV LINK -->
-                        <i class="fas fa-file-alt hover-scale"></i>
-                        <span class="tooltiptext">Descargar el CV de León</span>
+                    <a href="/assets/COSTANDOPULO_LEON.pdf" download="CV_COSTANDOPULO_LEON.pdf" target="_blank" class="cv-button hover-scale" aria-label="Abrir currículum"> <!--! CV LINK -->
+                        <i class="fas fa-file-alt  dropdown"></i>
+                        <span class="tooltiptext ">Descargar el CV de León</span>
                     </a>
-                    <a  href="https://github.com/LeonCostandopulo" target="_blank" class="github-button" aria-label="Ir a mi GitHub"> <!--! CV LINK -->
-                        <i class="fab fa-github hover-scale"></i>
+                    <a  href="https://github.com/LeonCostandopulo" target="_blank" class="github-button hover-scale" aria-label="Ir a mi GitHub"> <!--! CV LINK -->
+                        <i class="fab fa-github  dropdown"></i>
                         <span class="tooltiptext">Ir al GitHub de León</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/león-costandopulo-57b3a2236/" target="_blank" class="linkedin-button" aria-label="Abrir currículum"> <!--! CV LINK -->
-                        <i class="fas fab fa-linkedin hover-scale"></i>
+                    <a href="https://www.linkedin.com/in/león-costandopulo-57b3a2236/" target="_blank" class="linkedin-button hover-scale" aria-label="Abrir currículum"> <!--! CV LINK -->
+                        <i class="fas fab fa-linkedin  dropdown"></i>
                         <span class="tooltiptext">Ir al LinkedIn de León</span>
                     </a>
                 </container>
             </container>
         </section>
         <section class="block block2">
-            <h2 class="sobremi ">Sobre Mi</h2>
-            <p class="descripcion"> Soy un <span class="special-color"> programador Junior con 1 año de experiencia </span> aprendiendo sobre Front End. Me especializo en el desarrollo de interfaces de usuario y la creación de sitios web atractivos y funcionales. <span class="special-color"> Me encanta aprender </span>y estoy seguro que aportaré valor en su empresa.</p>
+            <h2 class="sobremi titulo">Sobre Mi</h2>
+            <p class="descripcion sobremitxt"> Soy un <span class="special-color"> desarrollador con 2 años de experiencia </span> aprendiendo sobre Front End. Me especializo en la creación de interfaces de usuario y sitios web atractivos, funcionales y escalables. <span class="special-color"> Me encanta aprender </span> y estoy seguro que aportaré valor en su empresa.</p>
         </section>
         <section class="block block3">
-            <h3 class="tecnologias">Tecnologías centrales</h3>
-            <ul class="tecnologias-list">
-                <li class="tecnologia-item">
-                    <i class="fab fa-html5"></i> HTML</li>
-                <li class="tecnologia-item">
-                    <i class="fab fa-css3-alt"></i> CSS</li>
-                <li class="tecnologia-item">
-                    <i class="fab fa-js-square"></i> JavaScript</li>
-                <li class="tecnologia-item bold white">
-                    <i class="fab fa-js-square fa-react tailwind-icon "></i> React</li>
-                <li class="tecnologia-item bold white">
-                    <svg class="fa-js-square tailwind-icon" viewBox="0 0 24 24" fill="currentColor">
+            <h3 class="tecnologias titulo">Mi stack</h3>
+            <ul class="tecnologias-list  dropdown">
+                <li class="tecnologia-item  dropdown">
+                    <i class="fab fa-html5  hover-up"></i> HTML
+                </li>
+                <li class="tecnologia-item  dropdown">
+                    <i class="fab fa-css3-alt  hover-up"></i> CSS
+                </li>
+                <li class="tecnologia-item  dropdown">
+                    <i class="fab fa-js-square hover-up "></i> JavaScript
+                </li>
+                <li class="tecnologia-item white dropdown">
+                    <svg class="fa-js-square tailwind-icon hover-up " viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
-                    </svg> Tailwind CSS </li>
+                    </svg> Tailwind CSS 
+                </li>
+                <li class="tecnologia-item  dropdown">
+                    <img src="assets/mongodb.svg" class="fab fa-mongodb hover-up"></img> MongoDB
+                </li>
+                <li class="tecnologia-item  dropdown">
+                    <img src="assets/express-js.png" class="fab express-js hover-up"></img> Express
+                </li>
+                <li class="tecnologia-item white  dropdown">
+                    <i class="fab fa-js-square fa-react tailwind-icon hover-up "></i> React
+                </li>
+                <li class="tecnologia-item  dropdown">
+                    <img src="assets/nodejs.png" class="fab nodejs  hover-up"></img> Node.js
+                </li>
+                
+                <li class="tecnologia-item  dropdown">
+                    <img class=" gsap-icon hover-up" src="assets/GSAP-icon.svg"></> GSAP
+                </li>
+                
             </ul>
         </section>
         <section class="block block4">
-            <h4 class="experiencia">Experiencia</h4>
+            <h4 class="experiencia titulo">Experiencia</h4>
             <ul class="experiencia-list">
-                <li class="experiencia-item">
+                <li class="experiencia-item animationSide">
                     <a class="empresa-logo-container" href="https://siennajma.netlify.app">
                         <img class="empresa-logo" src="/assets/sienna-logo-square.jpg" alt="imagen de la empresa"> <!--! IMAGEN DE LA EMPRESA -->
                     </a>
                     <div class="empresa-info">
-                        <p class="empresa-titulo">Sienna</p>
-                        <p class="empresa-descipcion">Es una web de venta de ropa sin pasarela de pago, el mismo se finaliza vía WhatsApp mediante su API para un mensaje personalizado. </p>
+                        <p class="empresa-titulo animationSide">Sienna</p>
+                        <p class="empresa-descipcion  animationSide">Es una web de venta de ropa sin pasarela de pago, el mismo se finaliza vía WhatsApp mediante su API para un mensaje personalizado. </p>
                         
-                        <p class="empresa-rol">Diseño, desarrollo y despliegue de la web. <span class="special-color">Freelance</span> </p>
+                        <p class="empresa-rol animationSide">Diseño, desarrollo y despliegue de la web. <span class="special-color">Freelance</span> </p>
                         <span class="stack">
-                            <i class="fab fa-react "></i>
-                            <svg class="fa-js-square tailwind-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <i class="fab fa-react hover-up"></i>
+                            <svg class="fa-js-square tailwind-icon hover-up" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
                             </svg></li>
                         </span> 
@@ -120,17 +140,17 @@
                         <p class="empresa-descipcion">Es un web estática, con una sección para customizar el producto y realizar la compra vía whatsapp (petición del cliente)</p>
                         <p class="empresa-rol">Diseño, desarrollo y despliegue de la web. <span class="special-color">Freelance</span> </p>
                         <span class="stack">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js-square"></i>
-                            <i class="fab fa-react "></i>
+                            <i class="fab hover-up fa-html5"></i>
+                            <i class="fab hover-up fa-css3-alt"></i>
+                            <i class="fab hover-up fa-js-square"></i>
+                            <i class="fab hover-up fa-react "></i>
                         </span> 
                     </div>
                 </li>
             </ul>
         </section>
         <section class="block block5">
-            <h4 class="experiencia proyectos">Proyectos</h4>
+            <h4 class="experiencia proyectos titulo">Proyectos</h4>
             <ul class="experiencia-list">
                 <li class="experiencia-item">
                     <a class="empresa-logo-container" href="https://crgrow.netlify.app">
@@ -138,14 +158,14 @@
                     </a>
                     <div class="empresa-info">
                         <p class="empresa-titulo">Sally Game</p>
-                        <p class="empresa-descipcion">Es un videojuego web hecho por pura curiosidad y ganas de aplicar utilidades "raras" de JavaScript que iba aprendiendo, es un juego corto, sencillo, más bien una historia, con estética de videojuego retro. <span class="special-color"> Aprendí mucho de JavaScript y CSS principalmente </span>, no es responsive ya que en ese momento no contaba con los conocimientos suficientes (a diferencia de <span class="special-color">este portfolio que es completamente responsive, te invito a probarlo)</span>
+                        <p class="empresa-descipcion">Es un videojuego web hecho por pura curiosidad y ganas de aplicar utilidades "raras" de JavaScript que iba aprendiendo, es un juego corto, sencillo, más bien una historia, con estética retro. <span class="special-color"> Aprendí mucho de JavaScript y CSS principalmente </span>, no es responsive ya que en ese momento no contaba con los conocimientos suficientes (a diferencia de <span class="special-color">este portfolio que es completamente responsive, te invito a probarlo)</span>
                         Estoy trabajando en la demo.
                         </p>
                         <p class="empresa-rol">Diseño, desarrollo y despliegue.</p>
                         <span class="stack">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js-square"></i>
+                            <i class="fab hover-up fa-html5"></i>
+                            <i class="fab hover-up fa-css3-alt"></i>
+                            <i class="fab hover-up fa-js-square"></i>
                         </span> 
                     </div>
                 </li>
@@ -160,16 +180,16 @@
                         </p>
                         <p class="empresa-rol">Diseño, desarrollo y despliegue.</p>
                         <span class="stack">
-                            <i class="fab fa-html5"></i>
-                            <i class="fab fa-css3-alt"></i>
-                            <i class="fab fa-js-square"></i>
+                            <i class="fab hover-up fa-html5"></i>
+                            <i class="fab hover-up fa-css3-alt"></i>
+                            <i class="fab hover-up fa-js-square"></i>
                         </span> 
                     </div>
                 </li>
             </ul>
         </section>
         <section class="block block4">
-            <h4 class="experiencia">Formación</h4>
+            <h4 class="experiencia titulo">Formación</h4>
             <ul class="experiencia-list">
                 <li class="experiencia-item">
                     <div class="ciata-logo-container">
@@ -235,6 +255,11 @@
         }, 2000);
         }
     </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src =" https://unpkg.com/split-type "> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script> :contentReference[oaicite:3]{index=3}  
+
     <script src='/JS/script.js'></script>
 </body>
 </html>
