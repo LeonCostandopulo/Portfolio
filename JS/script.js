@@ -162,7 +162,7 @@ experiencias.forEach((element) => {
     scrollTrigger: {
       trigger: element,
       start: "top 95%",
-      markers: true,
+    //  markers: true,
     },
   });
 });
