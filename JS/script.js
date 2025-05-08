@@ -1,10 +1,4 @@
 // GSAP GreenSock trabaja con el objeto "gsap"
-
-//* .from
-// Lo que hace el from es hacer la animación de aparicióm, finalizando en el lugar NORMAL o por defecto del elemento. (como un fade in)
-/*
-gsap.from(selector, {objeto con propiedades css})
-*/
 const pp = document.querySelector(".img-container"); //# pp ==> perfil photo
 gsap.from(pp, {
   // x: -50, // es lo mismo que un transform: translateX(-50px)
@@ -110,60 +104,22 @@ sobreMiSplit.chars.forEach((element, index) => {
   }
 });
 
-//# solo para el ejemplo usé el .to y el timeline, pero prefiero mucho más el .from
-// charsTL.to(sobreMiSplit.chars, {
-//   y: -100,
-//   ease: "back.inOut",
-//   duration: 1,
-//   opacity: 0,
-//   delay: 2,
-// }, ".-2.5"); //<- delay en segundos (negativo para que empiece antes)
-
-//* Trigger - Scroll animations
-
-//* Otro efecto para los titulos
-// const titulos = document.querySelectorAll(".titulo");
-// const titulosSplited = new SplitType(".titulo", { types: "words, chars" });
-// gsap.registerPlugin(ScrollTrigger); //! SIN ESTO NO FUNCIONA
-
-// titulos.forEach((element) => {
-//   gsap.to(element, {
-//     scrollTrigger: {
-//       trigger: element, // elemento disparador
-//       start: "center center", // "'elemento' 'pantalla'" osea que cuando el TOP del elemento llegue al CENTER del viewport height EMPIEZA la animación
-//       end: "bottom center", // "'elemento' 'pantalla'" osea que cuando el BOTTOM del elemento llegue al CENTER del viewport height TERMINA la animación
-//       // scrub: true, // para que se mueva con el scroll (podemos darle un NUM que hace que sea más suavizado)
-//       toggleActions: "play none none none", //cuando bajamos hace PLAY, cuando terminamos de bajar NONE, cuando subimos NONE y cuando terminamos de subir REVERSE
-//       //$              ⬇-   ⬇_   ⬆_   ⬆-
-//       markers: true, //% SUPER UTIL activarlo para el desarrollo
-//     },
-//     onStart: () => {
-//       gsap.to(titulosSplited.chars, {
-//         y: -20,
-//         duration: 0.5,
-//         delay: 0.5,
-//         onComplete: () => {
-//           gsap.to(element, {
-//             y: 0,
-//             duration: 0.5,
-//           });
-//         },
-//       });
-//     },
-//   });
-// });
-
-const experiencias = document.querySelectorAll(".experiencia-item");
-experiencias.forEach((element) => {
-  gsap.from(element, {
-    opacity: 0,
-    x: -50,
-    ease: "back.inOut",
-    delay: 0.25,
-    scrollTrigger: {
-      trigger: element,
-      start: "top 95%",
-      // markers: true,
-    },
+const mq = window.matchMedia("(max-width: 650px)");
+if (!mq.matches) {
+  const experiencias = document.querySelectorAll(".experiencia-item");
+  experiencias.forEach((element) => {
+    gsap.from(element, {
+      opacity: 0,
+      x: -50,
+      ease: "back.inOut",
+      delay: 0.25,
+      scrollTrigger: {
+        trigger: element,
+        start: "top 95%",
+        end: "top 95%",
+        // markers: true,
+      },
+    });
   });
-});
+}
+
