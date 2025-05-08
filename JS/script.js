@@ -48,6 +48,7 @@ gsap.from(nameSplit.chars, {
   ease: "back.inOut",
   duration: 2,
   opacity: 0,
+  delay: 2,
   // stagger: 0.005, //efecto muy piola eh
 });
 
@@ -162,7 +163,7 @@ experiencias.forEach((element) => {
     scrollTrigger: {
       trigger: element,
       start: "top 95%",
-    //  markers: true,
+      // markers: true,
     },
   });
 });
